@@ -1,0 +1,8 @@
+Command:
+npm init -y
+npm install -g create-react-app
+create-react-app My-App --template="typescript"
+
+
+
+4:15:00
