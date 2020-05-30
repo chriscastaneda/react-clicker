@@ -2,21 +2,21 @@ import React, { useState } from 'react';
 import './content.component.css';
 
 const ContentComponent: React.FC = () => {
-    /**Output to inventory */
-    const [excavators, setExcavators] = useState(0);
-    const [catapults, setCatapults] = useState(0);
-
     /**input to manufacture */
     const [excavatorsInput, setExcavatorsInput] = useState(0);
     const [catapultsInput, setCatapultsInput] = useState(0);
     
+     /**Output to inventory */
+     const [excavators, setExcavators] = useState(0);
+     const [catapults, setCatapults] = useState(0);
+
     /**Submit */
     const manufacture = () => {
         setExcavators(excavators + excavatorsInput);
         setCatapults(catapults + catapultsInput) ;
         setExcavatorsInput(0);
         setCatapultsInput(0);
-    }
+    };
 
     return(
         <main id="content-component">
@@ -27,6 +27,9 @@ const ContentComponent: React.FC = () => {
                     <li>{catapults} Catapults</li>
                 </ol>
             </section>
+
+
+
             <section id="manufacture-container">
                 <h2>manufacture</h2>
                 <form>
